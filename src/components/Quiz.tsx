@@ -24,7 +24,7 @@ export default function Quiz() {
     explanation: string;
   }>>([]);
 
-  const currentQuestion = sampleQuestions[state.currentQuestionIndex];
+  const currentQuestion: Question = sampleQuestions[state.currentQuestionIndex];
   const progress = (state.currentQuestionIndex / sampleQuestions.length) * 100;
 
   const handleAnswer = (answer: string) => {
